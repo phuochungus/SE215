@@ -28,6 +28,7 @@ const HeadNavBar = () => {
             "Mua sắm",
             "Tài chính",
             "Chat",
+            "Lịch trình",
             "FAQ",
             "Về chúng tôi",
           ].map((item) => (
