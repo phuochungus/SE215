@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const HeadNavBar = () => {
   return (
-    <AppBar position="static" style={{ backgroundColor: "#4A436C" }}>
+    <AppBar  style={{ backgroundColor: "#4A436C" }} className=" sticky top-0 z-50">
       <Toolbar>
         {/* Logo Section */}
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
