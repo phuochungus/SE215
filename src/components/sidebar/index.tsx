@@ -13,9 +13,8 @@ interface SidebarProps {
 
 const Sidebar: FC<SidebarProps> = ({ items }) => {
     return (
-        <aside className="bg-primary w-64 p-4 flex flex-col">
+        <aside className="bg-[#4A436C] w-64 p-4 flex flex-co mt-12l">
             <div className="mb-8">
-                <img src="/images/logo-white.svg" alt="Logo" className="h-8" />
             </div>
             <nav className="space-y-2 flex-1">
                 {items.map((item, index) => (

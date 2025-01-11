@@ -138,17 +138,17 @@ const CalendarPage: React.FC = () => {
                       <UserCard
                           name="Bố"
                          status="Last online"
-                         avatarSrc="/images/owl-avatar.svg"
+                         avatarSrc="/images/avatar1.png"
                       />
                       <UserCard
                            name="Mẹ"
                           status="Online"
-                         avatarSrc="/images/superman-avatar.svg"
+                         avatarSrc="/images/avatar2.png"
                       />
                        <UserCard
                           name="Wuan"
                          status="Online"
-                          avatarSrc="/images/robot-avatar.svg"
+                          avatarSrc="/images/avatar3.png"
                       />
                  </div>
                  </div>
