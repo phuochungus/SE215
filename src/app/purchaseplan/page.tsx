@@ -85,7 +85,7 @@ const ShoppingListPage: React.FC = () => {
   return (
     <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
-      <aside className="w-64 bg-[#4E4C67] text-white p-4 h-full overflow-y-auto">
+      <aside className="w-64 bg-[#4E4C67] text-white p-4 h-full overflow-y-auto mt-14">
         <nav className="space-y-4">
           <a href="/purchaseplan" className="block py-2 px-4 bg-gray-700 rounded">Quản lý danh mục mua sắm</a>
           <a href="/purchaseplan" className="block py-2 px-4 hover:bg-gray-600">Kế hoạch mua sắm</a>
