@@ -23,28 +23,25 @@ const HeadNavBar = () => {
         </Typography>
 
         <Box sx={{ display: "flex", gap: "15px", marginRight: 2 }}>
-          {[
-            "Trang chủ",
-            "Mua sắm",
-            "Tài chính",
-            "Chat",
-            "Lịch trình",
-            "FAQ",
-            "Về chúng tôi",
-          ].map((item) => (
-            <Link
-              key={item}
-              href={`/${item.replace(/\s+/g, "").toLowerCase()}`}
-              passHref
-            >
-              <Button
-                sx={{ color: "#fff", textTransform: "none", minWidth: 20 }}
-              >
-                <Typography>{item}</Typography>
-              </Button>
-            </Link>
-          ))}
-        </Box>
+  {[
+    { name: "Trang chủ", href: "/landing" },
+    { name: "Mua sắm", href: "/purchaseplan" },
+    { name: "Tài chính", href: "/purchaseHistory" },
+    { name: "Chat", href: "/chatting" },
+    { name: "Lịch trình", href: "/calendar" },
+    { name: "FAQ", href: "/faq" },
+    { name: "Về chúng tôi", href: "/about-us" },
+  ].map((item) => (
+    <Link key={item.name} href={item.href} passHref>
+      <Button
+        sx={{ color: "#fff", textTransform: "none", minWidth: 20 }}
+      >
+        <Typography>{item.name}</Typography>
+      </Button>
+    </Link>
+  ))}
+</Box>
+
 
         {/* Login and Sign Up Buttons */}
         <Box sx={{ display: "flex", gap: "10px" }}>
