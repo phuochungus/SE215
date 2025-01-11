@@ -88,7 +88,7 @@ const ShoppingListPage: React.FC = () => {
       <aside className="w-64 bg-[#4E4C67] text-white p-4 h-full overflow-y-auto">
         <nav className="space-y-4">
           <a href="/purchaseplan" className="block py-2 px-4 bg-gray-700 rounded">Quản lý danh mục mua sắm</a>
-          <a href="/shopping-plan" className="block py-2 px-4 hover:bg-gray-600">Kế hoạch mua sắm</a>
+          <a href="/purchaseplan" className="block py-2 px-4 hover:bg-gray-600">Kế hoạch mua sắm</a>
           <a href="/purchaseHistory" className="block py-2 px-4 hover:bg-gray-600">Lịch sử mua sắm</a>
           <a href="/purchaseManage" className="block py-2 px-4 hover:bg-gray-600">Thống kê</a>
         </nav>
