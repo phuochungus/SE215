@@ -28,7 +28,8 @@ const ResizableLayout = () => {
     <Box
       sx={{
         display: "flex",
-        height: "100vh",
+        // height: "100vh",
+        marginTop: "64px",
         width: "100%",
         overflow: "hidden",
       }}
