@@ -98,10 +98,15 @@ const ShoppingHistoryPage: React.FC = () => {
       {/* Sidebar */}
       <aside className="w-64 bg-[#4E4C67] text-white p-4 h-full overflow-y-auto">
         <nav className="space-y-4">
-          <a href="#" className="block py-2 px-4 hover:bg-gray-600">Quản lý chi tiêu</a>
+          <a href="#" className="block py-2 px-4 hover:bg-gray-600">Quản lý danh mục mua sắm</a>
+          <a href="#" className="block py-2 px-4 hover:bg-gray-600">Kế hoạch mua sắm</a>
           <a href="#" className="block py-2 px-4 bg-gray-700 rounded hover:bg-gray-600">Lịch sử mua sắm</a>
-          <a href="#" className="block py-2 px-4 hover:bg-gray-600">Cài đặt</a>
+          <a href="#" className="block py-2 px-4 hover:bg-gray-600">Thống kê</a>
         </nav>
+        <div className="mt-8 space-y-4">
+          <a href="#" className="block py-2 px-4 hover:bg-gray-600">Cài đặt</a>
+          <a href="#" className="block py-2 px-4 hover:bg-gray-600">BlockList</a>
+        </div>
       </aside>
 
       {/* Main Content */}
@@ -159,10 +164,10 @@ const ShoppingHistoryPage: React.FC = () => {
                 {bills[day].map((item, index) => (
                   <tr key={index} className="hover:bg-gray-100">
                     <td className="p-2 border-b text-black">{item.item}</td>
-                    <td className="p-2 border-b text-black">{item.price.toLocaleString()}đ</td>
-                    <td className="p-2 border-b text-black">{item.category}</td>
-                    <td className="p-2 border-b text-black">{item.quantity}</td>
-                    <td className="p-2 border-b text-black">{(item.price * item.quantity).toLocaleString()}đ</td>
+                    <td className="p-2 border-b">{item.price.toLocaleString()}đ</td>
+                    <td className="p-2 border-b">{item.category}</td>
+                    <td className="p-2 border-b">{item.quantity}</td>
+                    <td className="p-2 border-b">{(item.price * item.quantity).toLocaleString()}đ</td>
                   </tr>
                 ))}
               </tbody>
