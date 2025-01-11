@@ -27,7 +27,8 @@ export default function ResourceCalendar() {
             marginRight: "10px"
         },
         main: {
-            flexGrow: "1"
+            flexGrow: "1",
+            width: "75%"
         }
     };
 
